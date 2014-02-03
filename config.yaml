@@ -1,0 +1,12 @@
+---
+title: "j3ff.com"
+params:
+    author: "Jeff Davis"
+    ga_account: "xxFIXMExx"
+    twitter: "@j3ffdavis"
+    domain: "j3ff.com"
+indexes:
+    topic: "topics"
+    tag: "tags" 
+baseurl: "http://j3ff.com/"
+---
