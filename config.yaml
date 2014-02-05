@@ -2,11 +2,12 @@
 title: "j3ff.com"
 params:
     author: "Jeff Davis"
-    ga_account: "xxFIXMExx"
+    ga_account: "UA-47419540-1"
+    disqus: "j3ff"
     twitter: "@j3ffdavis"
     domain: "j3ff.com"
 indexes:
     topic: "topics"
-    tag: "tags" 
+    tag: "tags"
 baseurl: "http://j3ff.com/"
 ---
