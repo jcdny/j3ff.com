@@ -9,5 +9,5 @@ params:
 indexes:
     topic: "topics"
     tag: "tags"
-baseurl: "http://j3ff.com/"
+baseurl: "http://j3ff.com"
 ---

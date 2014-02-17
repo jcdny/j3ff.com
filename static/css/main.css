@@ -1,4 +1,4 @@
-/* ==========================================================================
+* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
@@ -61,7 +61,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px "Open Sans", Verdana, Arial, sans-serif;
 }
 
 .wrapper {
@@ -74,22 +74,32 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #e4e4e4;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #e4e4e4;
+}
+
+.main aside {
+    border-bottom: 20px solid #e4e4e4;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    color: black;
+    background: #f0f0f0;
+}
+
+.footer-container a {
+    color: #777;
 }
 
 .title {
-    color: white;
+    font-size: 2.4em;
+    color: #777;
 }
 
 /* ==============
@@ -104,14 +114,14 @@ nav ul {
 nav a {
     display: block;
     margin-bottom: 10px;
-    padding: 15px 0;
+    padding: 20px 0;
 
     text-align: center;
     text-decoration: none;
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    background: #777;
 }
 
 nav a:hover,
@@ -132,16 +142,19 @@ nav a:hover {
 }
 
 .main article h1 {
-    font-size: 2em;
+    font-size: 2.4em;
+    line-height: 1.4;
 }
 
 .main aside {
-    color: white;
     padding: 0px 5% 10px;
 }
 
+.main aside h1 {
+    font-size: 1.5em;
+}
+
 .footer-container footer {
-    color: white;
     padding: 20px 0;
 }
 
@@ -157,19 +170,41 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+code {
+    white-space: nowrap;
+    border: 1px solid black;
+    padding: 1px;
+}
+
+h1,h2,h3,h4 {
+    font-family: Rosarivo, Georgia, serif;
+}
 
 
+.btn {
+    background: #bbb;
+    border: 2px solid black;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+}
 
+a.tag:before {
+    content: "#";
+}
 
+.header-container {
+    background-image: url(/img/banner/20140204-_DSC2607.jpg);
+}
 
-
-
-
-
-
-
-
-
+.header-container h1 a {
+    font-family: Rosarivo;
+    font-size: 1.3em;
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+    padding: 0;
+}
 
 /* ==========================================================================
    Media Queries
@@ -342,10 +377,10 @@ nav a:hover {
         text-decoration: underline;
     }
 
-    a[href]:after {
+    .main-container a[href]:after {
         content: " (" attr(href) ")";
     }
-
+    
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
@@ -393,5 +428,8 @@ nav a:hover {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+    .header-container nav {
+        display: none;
     }
 }

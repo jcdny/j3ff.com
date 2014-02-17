@@ -1,7 +1,6 @@
+{{ $baseurl := .Site.BaseUrl }}
 {{ template "chrome/header.html" . }}
 {{ template "chrome/subheader.html" . }}
-{{ $baseurl := .Site.BaseUrl }}
-
  <div class="main-container">
    <div class="main wrapper clearfix">
      <article>
@@ -11,15 +10,6 @@
        <section>
          {{ .Content }}
        </section>
-       <footer>
-         <p>Posted on {{ .Date.Format "Mon, Jan 2, 2006" }}. Approximately {{ .FuzzyWordCount }} Words.</p>
-         {{ range .Params.topics }}
-         <a href="{{ $baseurl }}/topics/{{ . | urlize }}" class="btn btn-primary">{{ . }}</a>
-         {{ end }}
-         {{ range .Params.tags }}
-         <a href="{{ $baseurl }}/tags/{{ . | urlize }}" class="btn btn-primary">#{{ . }}</a>
-         {{ end }}
-       </footer>
        <footer class="nav">
          <ul>
            {{if .Next}}<li><a class="next" href="{{.Next.Permalink}}">{{.Next.Title}}</a></li>{{end}}
@@ -28,6 +18,11 @@
        </footer>
        {{ template "chrome/disqus.html" . }}
      </article>
+     <aside>
+         <p>Posted on {{ .Date.Format "Jan 2, 2006" }}.  About {{ .FuzzyWordCount }} Words.</p>
+         {{ range .Params.topics }}<a href="{{ $baseurl }}/topics/{{ . | urlize }}" class="topic btn btn-primary">{{ . }}</a>{{ end }}
+         {{ range .Params.tags }}<a href="{{ $baseurl }}/tags/{{ . | urlize }}" class="tag btn btn-primary">{{ . }}</a>{{ end }}
+     </aside>
    </div> <!-- #main -->
 </div> <!-- #main-container -->
 

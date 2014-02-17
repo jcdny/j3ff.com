@@ -1,19 +1,28 @@
-    <div class="footer-container">
-      <footer class="wrapper">
-        <div>&copy; Jeff Davis. Powered by <a href="http://hugo.spf13.com">Hugo</a>.</div>
-      </footer>
+<div class="footer-container">
+  <footer class="wrapper">
+    <div style="float: right; valign: center;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" src="/img/icon/cc-by.svg"></a></div>
+    <div id="copyright">
+      &copy; 2014 Jeff Davis,
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">some rights reserved</a>.<br>
+      <a href="/colophon">Site credits and other trivia</a>.
     </div>
+  </footer>
+</div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      var _gaq=[['_setAccount','{{ .Site.Params.ga_account }}'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src='//www.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-  </body>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '{{ .Site.Params.ga_account }}']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
 </html>
