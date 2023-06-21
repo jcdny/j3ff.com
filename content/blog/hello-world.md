@@ -19,7 +19,7 @@
     "Slug": "Hello",
     "Tags": [
         "Projects",
-        "Blog",
+        "Blog"
     ],
     "Thumbnail": "/img/missing.png",
     "Topics": [

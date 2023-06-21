@@ -1,8 +1,8 @@
-{
-    "Title": "Colophon",
-    "Description": "Site credits, copyright information, fonts, etc.",
-    "Pubdate": "2014-02-01",
-}
+---
+    Title: Colophon
+    Description: Site credits, copyright information, fonts, etc.
+    Pubdate: 2014-02-01
+---
 
 Powered by [Hugo](http://hugo.spf13.com).
 

@@ -5,7 +5,7 @@
         "Blog",
         "Programming",
         "Hugo",
-        "Initializr"
+        "Initializr",
         "H5BP"
     ],
     "Pubdate": "2014-02-03",
@@ -20,6 +20,8 @@
         "Blog"
     ]
 }
+
+## Steps
 
 Here's an outline of what I went through to build this blog.  You can
 see the live code at [github](http://github.com/jcdny/j3ff.com).
@@ -40,14 +42,14 @@ see the live code at [github](http://github.com/jcdny/j3ff.com).
   and used `s3cmd sync . s3://j3ff.com` to copy the static site up to s3.
 
 At this point I had a sort of working but very ugly site.
-{{% img src="/img/2014/website-initial-th.png" alt="The first cut at the site." class="right" %}} 
+{{< img src="/img/2014/website-initial-th.png" alt="The first cut at the site." class="right" >}}
 On the other hand the Disqus comments and Google Analytics both work
 as does the tag and topic subindex generation.
 
 Next step is to work through the css and some of the markup to get
 something that would not offend a blind dog, unlike the current site.
 
-## Trials and Travails ##
+## Trials and Travails
 
 At one point I had `{{ template "chrome/footer.html" }}`
 rather than `{{ template "chrome/footer.html" . }}`
@@ -72,7 +74,7 @@ I think programmatic pluralization like that is almost never a good
 idea and it should probably be handled the way indexes are handled
 with the plural in the config file.
 
-## So Far, So Good ##
+## So Far, So Good
 
 It's been a while since I have done any web development and never
 really did static site generation but I'm enjoying hugo so far.  It's
