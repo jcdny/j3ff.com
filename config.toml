@@ -1,0 +1,25 @@
+baseURL = 'http://j3ff.com/'
+languageCode = 'en-us'
+title = "j3ff.com"
+staticDir = "static"
+
+DefaultContentLanguage = "en"
+
+[params]
+mainSections = [
+    "post",
+    "blog",
+]
+
+
+[params.sidebar]
+subtitle = "A posting once a decade!"
+
+[params.sidebar.avatar]
+enabled = true
+local = true
+src = "img/avatar.jpg"
+
+[[params.widgets.page]]
+type = "toc"
+
