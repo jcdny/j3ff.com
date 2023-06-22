@@ -1,7 +1,6 @@
 baseURL = 'http://j3ff.com/'
 languageCode = 'en-us'
 title = "j3ff.com"
-staticDir = "static"
 
 DefaultContentLanguage = "en"
 
@@ -23,4 +22,10 @@ src = "img/avatar.jpg"
 [[params.widgets.page]]
 type = "toc"
 
+
+[module]
+[[module.mounts]]
+  source = 'content'
+  target = 'content'
+  excludeFiles = [ '**/.DS_Store' ]
 
